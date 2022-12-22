@@ -20,6 +20,8 @@ axi2.bit: axi2.v
 	${XRAY_UTILS_DIR}/fasm2frames.py --part $(part) --db-root ${XRAY_UTILS_DIR}/../database/$(family) axi2.fasm > axi2.frames
 	xc7frames2bit --part_file ${XRAY_UTILS_DIR}/../database/$(family)/$(part)/part.yaml --part_name $(part) --frm_file axi2.frames --output_file axi2.bit
 
-	
+diagram: $(shell ls lib/*vhd) $(shell ls $(name)/*vhd)
+	yosys -p "synth_xilinx -top axi2; show axi2" axi2.v
+
 clean:
 	rm -f $(TARGETS) *.bit *.json *.fasm *.frames *~
