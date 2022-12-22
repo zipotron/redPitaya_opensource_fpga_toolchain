@@ -1,0 +1,4 @@
+This is a workarround with the goal of create a FPGA bit stream for the
+RedPitaya board (Zynq7) just using the opensource tools (Yosys, NextPNR and Prjxray)
+that can interface with PS7. I mean, we can run a Linux in the ARM core, and be
+able to switch on/off the leds, that are conected to the FPGA, from the Linux system.
