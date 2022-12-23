@@ -1,5 +1,5 @@
 module axi2 (
-//  output [3:0]led,
+  output [3:0]led,
 //  input  [1:0]sw
 );
 
@@ -8,10 +8,10 @@ module axi2 (
 
 //  assign  sw[0] = data[0];
 //  assign  sw[1] = data[1];
-//  assign led[0] = data[0];
-//  assign led[1] = data[1];
-//  assign led[2] = data[2];
-//  assign led[3] = 1'b1;
+  assign led[0] = data[0];
+  assign led[1] = data[1];
+  assign led[2] = data[2];
+  assign led[3] = 1'b1;
 
   wire ar_valid;
   reg ar_ready;
