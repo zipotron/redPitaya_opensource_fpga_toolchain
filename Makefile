@@ -1,3 +1,5 @@
+SHELL := /bin/bash
+
 XRAY_DIR=/home/zipotron/movidas/tools/prjxray
 XRAY_UTILS_DIR=/home/zipotron/movidas/tools/prjxray/utils
 NEXTPNR_DIR=/home/zipotron/movidas/tools/nextpnr-xilinx
